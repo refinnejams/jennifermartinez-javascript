@@ -70,6 +70,34 @@
         let name03 = makeName("Erika" , "Jeannette" , "Martinez")
         console.log(name03)
 
+        // Make a name with middle initial
+        console.log("Make better name function")
+        function makeBetterName(firstName, middleName, lastName) {
+        if (middleName.length === 1) {
+            middleName = middleName + ".";
+            let fullName = firstName + " " + middleName + " " + lastName
+            return fullName;
+        } else {
+            let fullName = firstName + "" + middleName + "" + lastName
+        return fullName;
+  }
+}
+    console.log(makeBetterName("Joan ", "Marie ", "Larkin "));
+    console.log(makeBetterName("John", "F", "Kennedy"));
+
+    function gameResult (homeScore, awayScore) {
+        if (homeScore > awayScore) {
+        return 'The home team won';
+        } else if (homeScore === awayScore) {
+            return 'They tied';
+        } else {
+            return 'The away team won';
+        }
+    }
+        console.log(gameResult(4,2))
+        console.log(gameResult(2,4))
+        console.log(gameResult(2,2))
+    
         </script>  
 
         
